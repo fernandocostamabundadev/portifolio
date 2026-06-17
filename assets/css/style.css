@@ -1,13 +1,27 @@
 /* CSS Variables */
+@import url(./variables.css);
 /* Reset and Base Styles */
-/* Buttons */
+@import url(./reset.css);
+@import url(./base.css);
+/* global */
+@import url(./global.css);
 /* Accessibility */
+@import url(./accessibility.css);
 /* Header */
+@import url(./header.css);
 /* Hero */
+@import url(./hero.css);
 /* About */
+@import url(./about.css);
 /* Skills */
+@import url(./skill.css);
 /* Projects */
+@import url(./projects.css);
 /* Contacts */
+@import url(./contacts.css);
 /* Footer */
+@import url(./footer.css);
 /* Responsivo */
+@import url(./responsivo.css);
 /* Animacoes*/
+@import url(./animacoes.css);
