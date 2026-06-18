@@ -73,7 +73,6 @@
 
 .nav__toggle,
 .nav__close {
-  display: none;
   background: none;
   border: none;
   color: var(--color-white);
