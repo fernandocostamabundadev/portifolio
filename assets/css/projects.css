@@ -3,7 +3,7 @@
    ======================================== */
 
 .projects {
-  background: var(--bg-dark);
+  background-color: var(--color-secondary);
   padding: 5rem 0;
 }
 
@@ -17,7 +17,7 @@
 
 /* --- Card --- */
 .projects__card {
-  background: var(--bg-card);
+  background: var(--color-gray-700);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -83,13 +83,13 @@
 .projects__card-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-light);
+  color: var(--color-white);
   margin-bottom: 0.75rem;
 }
 
 .projects__card-description {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: var(--color-white);
   line-height: 1.6;
   margin-bottom: 1.25rem;
   flex: 1;
