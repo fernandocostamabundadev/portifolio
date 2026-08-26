@@ -42,26 +42,25 @@ portfolio/
 │   │   ├── style.css          # Arquivo principal (importa todos)
 │   │   ├── variables.css      # Variáveis CSS (cores, espaçamentos)
 │   │   ├── reset.css          # Reset CSS
-│   │   ├── base.css           # Estilos base
-│   │   ├── global.css         # Estilos globais (container, buttons)
 │   │   ├── typography.css     # Tipografia
+│   │   ├── global.css         # Estilos globais (container, buttons)
 │   │   ├── header.css         # Header e navegação desktop
-│   │   ├── mobile-menu.css    # Menu mobile
-│   │   ├── animations.css     # Animações e keyframes
-│   │   ├── responsive.css     # Responsividade geral
+│   │   ├── menu-mobile.css    # Menu mobile
+│   │   ├── hero.css           # Seção Hero
 │   │   ├── about.css          # Seção Sobre
-│   │   ├── skills.css         # Seção Habilidades
+│   │   ├── skill.css          # Seção Habilidades
 │   │   ├── projects.css       # Seção Projetos
-│   │   ├── contact.css        # Seção Contato
-│   │   └── footer.css         # Rodapé
-│   ├── js/
-│   │   └── script.js          # JavaScript principal
-│   └── img/
-│       ├── foto-perfil.jpg
-│       └── projects/
-│           ├── barber-hub.jpg
-│           ├── weather-app.jpg
-│           └── auth-system.jpg
+│   │   ├── contacts.css       # Seção Contato
+│   │   ├── footer.css         # Rodapé
+│   │   ├── animations.css     # Animações e keyframes
+│   │   └── responsivo.css     # Responsividade geral
+│   ├── script.js             # JavaScript principal
+│   ├── img/
+│   │   ├── foto-perfil.jpeg
+│   │   ├── barber-hub.jpeg
+│   │   ├── weather-app.jpeg
+│   │   └── auth-system.jpeg
+│   └── README.md
 └── README.md
 ```
 

@@ -5,30 +5,27 @@
 /* 1. VARIÁVEIS */
 @import url('./variables.css');
 
-/* 2. RESET E BASE */
+/* 2. RESET E TIPOGRAFIA */
 @import url('./reset.css');
-@import url('./base.css');
+@import url('./typography.css');
 
 /* 3. GLOBAL */
 @import url('./global.css');
 
-/* 4. ACESSIBILIDADE */
-@import url('./accessibility.css');
-
-/* 5. HEADER E MENU */
+/* 4. HEADER E MENU */
 @import url('./header.css');
-@import url('./mobile-menu.css');
+@import url('./menu-mobile.css');
 
-/* 6. SEÇÕES */
+/* 5. SEÇÕES */
 @import url('./hero.css');
 @import url('./about.css');
 @import url('./skill.css');
 @import url('./projects.css');
 @import url('./contacts.css');
-@import url('footer.css');
+@import url('./footer.css');
 
-/* 7. ANIMAÇÕES */
+/* 6. ANIMAÇÕES */
 @import url('./animations.css');
 
-/* 8. RESPONSIVIDADE */
-@import url('./responsive.css');
+/* 7. RESPONSIVIDADE */
+@import url('./responsivo.css');
