@@ -5,27 +5,22 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log('🚀 Iniciando...');
 
-  // Elementos
   var menu = document.getElementById('nav-menu');
   var toggle = document.getElementById('nav-toggle');
   var close = document.getElementById('nav-close');
   var links = document.querySelectorAll('.nav__link');
+  var header = document.getElementById('header');
 
-  // Verifica
   if (!menu || !toggle) {
     console.error('❌ Elementos não encontrados!');
     return;
   }
 
-  console.log('✅ Elementos OK!');
-
-  // Funções
   function abrir() {
     menu.classList.add('show-menu');
     toggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
     document.body.classList.add('menu-open');
-    console.log('📂 Abriu');
   }
 
   function fechar() {
@@ -33,10 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     toggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
     document.body.classList.remove('menu-open');
-    console.log('📁 Fechou');
   }
 
-  // Eventos
   toggle.addEventListener('click', function(e) {
     e.stopPropagation();
     if (menu.classList.contains('show-menu')) {
@@ -61,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.addEventListener('click', function(e) {
     if (!menu.classList.contains('show-menu')) return;
-    
+
     var dentro = menu.contains(e.target);
     var noToggle = toggle.contains(e.target);
     var noClose = close ? close.contains(e.target) : false;
@@ -75,6 +68,38 @@ document.addEventListener('DOMContentLoaded', function() {
     if (e.key === 'Escape' && menu.classList.contains('show-menu')) {
       fechar();
     }
+  });
+
+  function updateHeaderState() {
+    if (!header) return;
+    if (window.scrollY > 30) {
+      header.classList.add('is-scrolled');
+    } else {
+      header.classList.remove('is-scrolled');
+    }
+  }
+
+  function updateActiveNavLink() {
+    var scrollPosition = window.scrollY + 140;
+    var currentId = 'hero';
+
+    document.querySelectorAll('main section[id], footer[id]').forEach(function(section) {
+      if (section.offsetTop <= scrollPosition) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    links.forEach(function(link) {
+      var isActive = link.getAttribute('href') === '#' + currentId;
+      link.classList.toggle('active', isActive);
+    });
+  }
+
+  updateHeaderState();
+  updateActiveNavLink();
+  window.addEventListener('scroll', function() {
+    updateHeaderState();
+    updateActiveNavLink();
   });
 
   console.log('✅ Menu pronto! 🚀');

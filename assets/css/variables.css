@@ -1,10 +1,15 @@
 :root {
   /* Colors */
-  --color-primary: #a37a57;
-  --color-primary-dark: #24292e;
-  --color-secondary: #f5efe6;
-  --color-dark: #0e0e0e;
+  --color-primary: #b27d52;
+  --color-primary-dark: #7e522f;
+  --color-primary-soft: #efd9c3;
+  --color-secondary: #f4efe8;
+  --color-secondary-strong: #eae0d4;
+  --color-dark: #16120f;
+  --color-dark-soft: #221b17;
   --color-white: #ffffff;
+  --color-surface: #fffdf9;
+  --color-surface-alt: #f1e7dc;
   --color-gray-100: #f8f9fa;
   --color-gray-200: #e9ecef;
   --color-gray-300: #dee2e6;
@@ -14,11 +19,16 @@
   --color-gray-700: #495057;
   --color-gray-800: #343a40;
   --color-gray-900: #212529;
-
-  /* Success, Warning, Error */
+  --color-text: #1b1a1a;
+  --color-text-muted: #5a524d;
   --color-success: #28a745;
   --color-warning: #ffc107;
   --color-error: #dc3545;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(135deg, #120d0b 0%, #1a1512 24%, #403127 100%);
+  --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(244, 233, 220, 0.94) 100%);
+  --gradient-button: linear-gradient(135deg, var(--color-primary) 0%, #d09b63 100%);
 
   /* Typography */
   --font-primary: "Poppins", system-ui, -apple-system, sans-serif;
